@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 @Controller
 public class HelloController {
-    /*@RequestMapping("/index")
+    @RequestMapping("/index")
     public String hello(){
         return "index";
-    }*/
+    }
 }
