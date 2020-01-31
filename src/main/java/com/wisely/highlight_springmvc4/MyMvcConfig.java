@@ -59,6 +59,11 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
         multipartResolver.setMaxInMemorySize(1000000);
         return multipartResolver;
     }
+
+    @Override
+    public void configurePathMatch(PathMatchConfigurer configurer) {
+        configurer.setUseSuffixPatternMatch(false);
+    }
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
